@@ -1,5 +1,5 @@
 <?php
-class product
+class Product
 {
     public $id;
     public $name;
@@ -7,6 +7,7 @@ class product
     public $price;
     private $is_avaiable = false;
     public $img_src;
+    public $genre;
 
     /**
      * @var int id
@@ -15,12 +16,13 @@ class product
      * @var float price
      * @var string img_src placeholder if null
      */
-    public function __construct($_id, $_name, $_brand, $_price, $_img_src = null)
+    public function __construct($_id, $_name, $_brand, $_price, $_genre, $_img_src = null)
     {
         $this->id = $_id;
         $this->name = $_name;
         $this->brand = $_brand;
         $this->price = $_price;
+        $this->genre = $_genre;
         $this->img_src = $_img_src;
     }
 
