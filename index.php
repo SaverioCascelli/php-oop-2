@@ -1,5 +1,5 @@
 <?php
-include_once __DIR__ . "./Models/product.php";
+include_once __DIR__ . "/db/database.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,14 +11,8 @@ include_once __DIR__ . "./Models/product.php";
 <body>
 
     <?php
-    $cats = [
-        $mia = new Product(1, 'micio miao', '4cats', 1.22),
-        $mew = new Product(2, 'micio miaw', '4cats', 1.32)
-    ];
 
-    $mia->toggleAvaiable();
-
-    var_dump($cats);
+    var_dump($productArr);
     ?>
 </body>
 
