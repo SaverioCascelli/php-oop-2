@@ -30,4 +30,9 @@ class Product
     {
         $this->is_avaiable = !($this->is_avaiable);
     }
+
+    public function getInfoArr()
+    {
+        return get_object_vars($this);
+    }
 }

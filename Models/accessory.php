@@ -14,5 +14,12 @@ class Accessory extends Product
 
         parent::__construct($_id, $_name, $_brand, $_price, $_genre, $_img_src = null);
     }
+    public function getfeature()
+    {
+        $arr = [];
+        $arr['material'] = $this->material;
+        $arr['size'] = $this->size;
+        return $arr;
+    }
 }
 ?>

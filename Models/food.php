@@ -15,4 +15,12 @@ class Food extends Product
 
         parent::__construct($_id, $_name, $_brand, $_price, $_genre, $_img_src = null);
     }
+    public function getfeature()
+    {
+        $arr = [];
+        $arr['weight'] = $this->weight . 'g';
+        $arr['taste'] = $this->taste;
+        $arr['ingredients'] = implode(",", $this->ingredients);
+        return $arr;
+    }
 }

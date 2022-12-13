@@ -15,8 +15,8 @@ $categoryArr = [
 
 
 $productArr = [
-    $feededDog = new Food(1, 'Happy Dog Food', 'HDF', 12.99, $dogExpire, 10, ['beef', 'chicken'], 'meat'),
-    $happyDog = new Toy(1, 'Happy Dog Food', 'HDF', 12.99, $dogNotExpire, 10, 'not so funny', 'big'),
+    $feededDog = new Food(1, 'Feeded Dog Food', 'HDF', 12.99, $dogExpire, 10, ['beef', 'chicken'], 'meat'),
+    $happyDog = new Toy(1, 'Happy Dog Toy', 'HDF', 12.99, $dogNotExpire, 'not so funny', 'big'),
     $happyCat = new Toy(2, 'Happy Cat Toy', 'HCT', 10.99, $catNotExpire, 'very funny', 'medium'),
 
     $prettyCat = new Accessory(3, 'Fabulous Cat', 'FC', 10.99, $catNotExpire, 'very pretty', 'medium'),
